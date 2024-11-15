@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" dir="ltr">
+
+
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web sex gái gọi số một Việt Nam | Gaito</title>
+	
+
+	<script type="text/ng-template" id="/tpls/knn/base/mainNav.html">
+		<nav class="navbar navbar-default  navbar-fixed-top"  >
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle pull-left"  data-target="#navbar"
+							ng-click="isNavCollapsed = !isNavCollapsed"
+							aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Bật mở thanh menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="knn_logo hidden-xs  navbar-brand" href="/"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse " uib-collapse="isNavCollapsed"   aria-expanded="false">
+					<ul class="nav navbar-nav ow_main_menu">
+						<li class="base_dashboard"
+							ng-class="{'active': path.indexOf(item.url )>-1 }"
+							ng-repeat="item in ::menuItems"
+							ng-if="::(item.visibility==3 || (item.visibility == 2 && user.isAuthenticated)|| (item.visibility == 1 && !user.isAuthenticated ))">
+							<!--ui-sref="{{item.routePath}}"-->
+							<a ng-href="{{item.url}}" >
+								<span ng-bind-html="item.label |trustHtml"> </span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</script>
+
+	<script type="text/ng-template" id="/tpls/knn/base/footerNav.html">
+		<div class="knn_footer_menu">
+        <span ng-repeat="item in menuItems"
+			  ng-if="::(item.visibility==3 || (item.visibility == 2 && user.isAuthenticated)|| (item.visibility == 1 && !user.isAuthenticated ))"
+		>
+            <a  ng-href="{{item.url}}"
+				class="active"  target="_blank" ng-bind-html="item.label |trustHtml"> </a>
+            <span ng-hide="$last"> | </span>
+        </span>
+
+		</div>
+	</script>
+
+	<script type="text/ng-template" id="/tpls/knn/base/dir/system_tray.html">
+		<div class="kn_systray clearfix">
+			<div class="ow_console_body clearfix">
+
+				<!--INVITATIONS-->
+				<div
+						ng-repeat="item in items | orderBy:'order'"
+						class="ow_console_item "
+
+
+						ng-if="!(item.hideIfEmpty && item.total == 0 )">
+				<span href="javascript://"
+					  uib-popover-template="item.templateUrl"
+					  popover-placement="bottom-right"
+					  popover-trigger="'outsideClick'"
+					  popover-title="{{item.title}}"
+
+					  class="ow_cursor_pointer"
+					  ng-bind-html="item.label |trustHtml"
+				>
+				</span>
+
+					<span ng-show="item.unread > 0 "
+						  class="ow_count_wrap">
+					<span class="ow_count_bg  ow_count_active" style="width: 14px;">
+						<span class="ow_count " style="right: 0px;"                                      >
+							<span ng-bind="item.unread"></span></span>
+					</span>
+				</span>
+
+
+				</div>
+
+
+				<!--MAILS & MESSAGES-->
+
+				<!--NOTIFICATIONS-->
+
+				<!-- SIGN IN / OUT , REGISTER-->
+				<user-auth-handler></user-auth-handler>
+			</div>
+		</div>
+
+	</script>
+
+	<script type="text/ng-template" id="/tpls/knn/base/dir/authHandler.html">
+		<!-- @base.js-->
+		<span>
+		<span ng-if="!user.isAuthenticated">
+			<a class="btn btn-xs btn-default" ng-click="signInForm()" >
+                <span translate="base+ui_sign_in_submit_label"></span></a>
+			<a class="btn btn-xs btn-primary" href="/join" >
+                <span translate="base+ui_sign_up_label"></span></a>
+		</span>
+
+
+    </span>
+	</script>
+
+
+	<script type="text/ng-template" id="/tpls/knn/base/loading_overlay.html">
+
+		<div   class="loader-overlay">
+
+			<i class="fa fa-spinner  fa-4x
+			fa-spin overlay-spinner" style=""></i>
+		</div>
+
+
+	</script>
+
+	
+
+	<meta http-equiv="Content-language" content="vi" />
+<meta name="revisit-after" content="1 days" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="{{htmlKeywords}}" />
+<meta name="description" content="Web sex gái gọi số một Việt Nam cung cấp dịch vụ gái gọi uy tín; chia sẻ phim sex, ảnh sex, truyện hentai...kết nối cộng đồng dân chơi Việt." />
+
+	<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/cli_libs/bootstrap-3.3.6/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/themes/seduction-38/base.css?UXyK3K1l" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/cli_libs/escort-78/css/escort.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/cli_libs/video-32/css/video.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/cli_libs/angular-loading-bar-0.8.0/css/loading-bar.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/cli_libs/font-awesome-4.6.3/css/font-awesome.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://www.gaito.love/kn-static/cli_libs/glconnect-32/css/glconnect.css" media="all" />
+
+	<style media="all">
+
+.connect_button_list {
+    padding-top: 5px;
+}
+
+</style><link rel="shortcut icon" type="image/x-icon" href="https://www.gaito.love/kn-static/userfiles/plugins/base/favicon.ico" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<base href="https://www.gaito.love/gai-goi/" />
+
+
+</head>
+
+<!--[if IE 8]><body class="ow ie8 seduction"><![endif]-->
+<!--[if !IE 8]><!-->
+<body class="ow seduction">
+	<!--<![endif]-->
+	<div class="container seduction-container" role="main">
+		
+
+
+<base-main-nav></base-main-nav>
+
+
+<div class="knn_site_panel">
+    <div class="ow_console_right pull-right">
+        <base-system-tray-dir></base-system-tray-dir>
+    </div>
+</div>
+
+<div class="knn_page_wrap">
+
+    <div class="knn_header">
+        <div class="knn_header_pic"></div>
+
+    </div>
+    <div class="ow_page_padding">
+
+        <div class="ow_page_container">
+            <div class="ow_canvas">
+                <div class="ow_page ow_bg_color clearfix">
+                    <h1 class="ow_stdmargin ow_ic_file"></h1>
+                    
+                    <div class="ow_content" class="bs-loading-container container"
+
+                         bs-loading-overlay
+                         bs-loading-overlay-reference-id="core-ui-state">
+                        
+                         
+
+
+
+
+
+<div class="container-escort" block-ui="escortBlock" ng-controller="EscortCtrl">
+    <div ncy-breadcrumb></div>
+    <div class="btn-toolbar ow_stdmargin">
+            <div class="btn-group" uib-dropdown>
+                <button class="btn btn-sm btn-primary dropdown-toggle btn_menu_gg_small btn-block" type="button"
+                        uib-dropdown-toggle
+                        ng-class="{active: $state.includes('nearby')||$state.includes('directory') }"
+                        aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-map-marker"></i> <span translate="escort+ui_menu_directory"> </span> <span
+                        class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" uib-dropdown-menu>
+                    <li ng-class="{active: $state.includes('nearby')}">
+                        <a ui-sref="nearby">
+                            <i class="fa fa-location-arrow"></i> {{'escort+ui_menu_home' | translate}}
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li ng-repeat="city in Session.cities">
+                        <a
+                                ui-sref="listByCity({cityCode:city.short_name})"
+                                ng-bind="city.displayName"></a></li>
+                </ul>
+            </div>
+            <button class="btn btn-sm btn-primary    " ui-sref="myplaces"
+                    ng-class="{active:$state.includes('myplaces')}">
+                <i class="fa fa-user"></i> <span translate="escort+ui_menu_my_places"> </span>
+            </button>
+            <button class="btn btn-sm btn-primary  " ui-sref="productForm.basic({id:null})"
+                    ng-class="{active:$state.includes('productForm')}"            >
+                <i class="fa fa-pencil"></i> <span translate="escort+ui_menu_add_new"> </span>
+            </button>
+        
+                
+    </div>
+
+
+
+    <div ui-view keep-scroll-position></div>
+    <div ui-view="nearbyView" ng-show="$state.includes('nearby')" keep-scroll-position/>
+</div>
+
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="knn_footer">
+    <div class="ow_canvas">
+        <div class="ow_page clearfix">
+            
+            <base-footer-nav></base-footer-nav>
+            <div class="ow_copyright ow_left">
+                © Bản quyền thuộc về Gai.to
+            </div>
+            <div style="float:right; display: none;">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display: none" id="floatbox_prototype">
+
+    
+    <div class="default">
+        <div class="floatbox_canvas floatbox_default">
+            <div class="floatbox_preloader_container">
+                <div class="floatbox_preloader ow_floatbox_preloader"></div>
+            </div>
+
+            <div class="floatbox_container">
+				<div class="ow_bg_color">
+					<div class="floatbox_header">
+						<div class="clearfix floatbox_cap">
+							<h3 class="floatbox_title"></h3>
+							<div class="ow_box_cap_icons clearfix">
+								
+								<i class="fa fa-close fa-2x close"></i>
+							</div>
+					   </div>
+					</div>
+					<div class="floatbox_body"></div>
+					<div class="floatbox_bottom"></div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="empty">
+        <div class="floatbox_canvas floatbox_empty">
+            <div class="floatbox_preloader_container">
+                <div class="floatbox_preloader ow_floatbox_preloader"></div>
+            </div>
+
+            <div class="floatbox_container">
+				<div class="ow_bg_color">
+					<div class="floatbox_header">
+						<div class="ow_box_cap_icons clearfix">
+							
+							<i class="fa fa-close fa-2x close"></i>
+						</div>
+					</div>
+					<div class="floatbox_body"></div>
+					<div class="floatbox_bottom"></div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="display:none"><div id="base_cmp_floatbox_ajax_signin"><div class="ow_sign_in_wrap">
+<h2>GaiTo</h2>
+<form id="form_a5e93915" method="post" action="https://www.gaito.love/base/user/ajax-sign-in/" name="sign-in">
+<input name="form_name" id="input_y81jag1w" type="hidden" value="sign-in" />
+<input name="csrf_token" id="input_y5ez3ked" type="hidden" value="MTczMTY2NTAzMnU4NGhvbllrMWg0TjJYMXYzOUF4YURPTnVCT01Pello" />
+
+     <div class="clearfix">
+        <div class="ow_sign_in">
+            <div class="ow_box_cap">
+	<div class="ow_box_cap_right">
+		<div class="ow_box_cap_body">
+			<h3  ><i class="fa ow_ic_file"></i> Vui lòng đăng nhập</h3>
+		</div>
+	</div>
+</div>
+<div class="ow_box ow_break_word">
+
+
+                <div class="ow_user_name">
+                    <input name="identity" id="input_az2r254m" type="text" placeholder="Username/Email" />
+                </div>
+                <div class="ow_password">
+                    <input name="password" id="input_es2juq4z" type="password" placeholder="password" value="password" />
+                </div>
+                <div class="ow_form_options clearfix">
+                    <div class="ow_right">
+                        
+    <input
+            class=" btn-primary btn-md  btn"
+            type="submit"
+           value="Đăng nhập" id="input_ymyvyg4d"            name="submit" value="Đăng nhập"   />
+                    </div>
+                    <p class="ow_remember_me"><input name="remember" id="input_17opom36" type="checkbox" checked="checked" /><label for="input_17opom36">Lưu lại</label></p>
+                    <p class="ow_forgot_pass"><a href="https://www.gaito.love/forgot-password">Lấy lại mật khẩu</a></p>
+                </div>
+            
+	<div class="ow_box_bottom_left"></div>
+	<div class="ow_box_bottom_right"></div>
+	<div class="ow_box_bottom_body"></div>
+	<div class="ow_box_bottom_shadow"></div>
+</div>
+            <div class="ow_connect_buttons">
+                <div class="connect_button_cont clearfix"><span class="ow_connect_text">hoặc đăng nhập bằng</span>
+<div class="connect_button_list">
+    <script>
+    function popupCenter(url, title, w, h) {
+        var left = (screen.width/2)-(w/2);
+        var top = (screen.height/2)-(h/2);
+        return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+    }
+</script>
+
+
+<span class="glconnect_button" onClick="popupCenter('https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=640074241460-cp94rn970p9hf740nlf0goeq10b875sr.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.gaito.love%2Fglconnect%2Foauth&state&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&approval_prompt=auto','google_oauth',626,436)">
+    <span class="glconnect_button_text">Kết nối</span>
+</span>
+</div></div>
+            </div>
+        </div>
+        <div class="ow_sign_up">
+            <p>Chào mừng bạn tham gia vào cộng đồng!<br/><br/>
+Trước khi tiếp tục, bạn cần phải đăng ký hồ sơ của bạn và trở thành thành viên, việc này nhanh chóng, đơn giản và hoàn toàn miễn phí.<br/>
+<a href="http://gai.to/truyen-sex/bai-viet/6050/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-%C4%91%C4%83ng-k%C3%BD-th%C3%A0nh-vi%C3%AAn-gai.to" title="Click vào đây để xem hướng dẫn đăng ký"><font color="orange">HƯỚNG DẪN ĐĂNG KÝ</font></a></p>
+            <hr>
+            <p> <a href="https://www.gaito.love/join">Đăng ký</a></p>
+        </div>
+     </div>
+
+</form>
+</div></div></div><script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-64630975-2");
+                pageTracker._trackPageview();
+            } catch(err) {}
+            </script><script type="application/ld+json">
+            {
+                "@context":"https://schema.org",
+                 "@type":"WebSite",
+                 "url":"https://www.gaito.io",
+                 "inLanguage":"vi",
+                 "name":"Gaito - Gái gọi chân thực uy tín #1 Việt Nam",
+                 "description": "Danh sách gái gọi cập nhật liên tục với hình ảnh chân thực, uy tín, từ gái bình dân đến gái cao cấp, PGA, gái đi tour"
+
+        }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-resource.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-touch.min.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/angular-translate-2.15.2/js/angular-translate.all.min.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/ocLazyLoad-1.1.0/js/ocLazyLoad.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/base-81/js/ga.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/escort-78/js/escort.min.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/angular-bootstrap-lightbox-0.12.0/js/angular-bootstrap-lightbox.min.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/knn-breadcrumb-0.4.2/js/angular-breadcrumb.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/knn-ui-router-1.0.0/js/ui-router-core.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/knn-ui-router-1.0.0/js/ui-router-sticky-states.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/knn-ui-router-1.0.0/js/ui-router-angularjs.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/video-32/js/video_common.min.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/angular-i18n-1.5.7/js/angular-locale_vi.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/angular-ui-bootstrap-2.0.2/js/ui-bootstrap-tpls-2.0.2.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/angular-loading-bar-0.8.0/js/loading-bar.min.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/angular-loading-overlay-1.1.1/js/angular-loading-overlay.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/base-81/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="https://www.gaito.love/kn-static/cli_libs/base-81/js/jquery.jscrollpane.js"></script>
+<script type="text/javascript">
+(function() {        
+            angular.module('knn.configs')
+                .constant('RESOURCE_URL', 'https://www.gaito.love/kn-static/cli_libs/base-81/')  
+                .constant('API_ROOT', 'https://api.gaito.love/')
+
+                .constant('user',{"isAuthenticated":false})
+                .constant('versions',{"base":"81","admin":"32","friends":"32","notifications":"32","finance":"32","photo":"35","video":"32","contactus":"32","sitemap":"32","usercredits":"32","cloudflare":"32","admintools":"32","ocsloginas":"32","glconnect":"32","ganalytics":"32","newsfeed":"32","escort":"78","journal":"32","ext":"33","manga":"33","xchat":"77","privacy":"32","googlelocation":"32"})
+                .constant('LANG','vi')
+                .constant('OW_URL_HOME','https://www.gaito.love/')
+                .constant('CSS_FILE_URL','https://www.gaito.love/kn-static/themes/seduction-38/base.css')
+                .constant('STATIC_ROOT_PATH','https://www.gaito.love/kn-static/')
+                .constant ('configs',{"escort_ui_distance_units":"km","escort_ui_results_per_page":"20","escort_ui_maxPrice":"6000","escort_ui_maxDistance":"8","manga_ui_items_per_page":"10","escort_ui_minPrice":"200","escort_ui_priceStep":"50","escort_ui_currency":"USD","escort_ui_min_publish_days":"1","ext_ui_items_per_page":"20","ext_ui_cmt_min_chars":"20","ext_ui_cmt_flood_interval":"28","xchat_ui_results_per_page":"20","newsfeed_ui_index_status_limit":"1","newsfeed_ui_suggestion_distance":"3","escort_ui_phone_privacy_credit_max":"5000","escort_ui_phone_privacy_credit_min":"50","escort_ui_credit_commission_rate":"0.1","ext_ui_cmt_daily_login_requirement":"28","ext_ui_review_daily_login_requirement":"28","ext_ui_vote_daily_login_requirement":"10","escort_ui_creation_daily_login_requirement":"1","escort_ui_creation_credit_requirement":"10000","ext_ui_vote_flood_interval":"86400","ext_ui_review_flood_interval":"86400","ext_ui_view_count_duration":"26","escort_ui_product_max_photo":"20","escort_ui_review_max_photo":"8","googlelocation_ui_gg_api_key":"AIzaSyDOeiIr_lU-EO0u1iKxMouykzRJcFVyhL4"})
+                .constant('HTML5',true)
+                                  .constant('SYS_CONSTANTS', {
+                        api: {
+                            endpoint: 'https://api.gaito.love/'
+                        },
+                        storage: {
+                            endpoint: 'https://cdn.gaito.love/'
+        
+                        },
+                        static: {
+                            endpoint: 'https://cdn.gaito.love/'
+                        },
+        
+                        auth: {
+                             
+                        },
+                        configs: {
+                          
+        
+                        },
+                        version: {
+                             
+                        }
+        
+                    })
+                    
+                ;})();
+</script>
+<script type="text/javascript">
+(function() {OW.ajaxComponentLoaderRsp = "https:\/\/www.gaito.love\/base\/ajax-loader\/component\/";
+OW.ajaxAttachmentLinkRsp = "https:\/\/www.gaito.love\/base\/attachment\/add-link\/";
+OW.getPing().setRspUrl("https:\/\/www.gaito.love\/base\/ping\/index\/");
+OW.Users = new OW_UsersApi({"rsp":"https:\/\/www.gaito.love\/base\/ajax-users-api\/rsp\/"});
+})();
+</script>
+<script type="text/javascript">
+$(function () {
+(function(_scope) {OW.registerLanguageKey('admin', 'edit_language', "S\u1eeda ng\u00f4n ng\u1eef");})({});
+(function(_scope) {OW.registerLanguageKey('base', 'ajax_floatbox_users_title', "Th\u00e0nh vi\u00ean");})({});
+(function(_scope) {OW.registerLanguageKey('base', 'flag_as', "B\u00e1o x\u1ea5u");})({});
+(function(_scope) {OW.registerLanguageKey('base', 'delete_user_confirmation_label', "X\u00e1c nh\u1eadn x\u00f3a");})({});
+(function(_scope) {OW.registerLanguageKey('base', 'authorization_limited_permissions', "");})({});
+(function(_scope) {OW.registerLanguageKey('base', 'avatar_change', "\u0110\u1ed5i \u1ea3nh \u0111\u1ea1i di\u1ec7n");})({});
+(function(_scope) {OW.registerLanguageKey('base', 'avatar_crop', "C\u1eaft Avatar");})({});
+(function(_scope) { var form = new OwForm({"id":"form_a5e93915","name":"sign-in","reset":false,"ajax":true,"ajaxDataType":"json","validateErrorMessage":"H\u00e3y \u0111i\u1ec1n v\u00e0o m\u1eabu \u0111\u00fang c\u00e1ch"});window.owForms[form.name] = form;
+			
+var formElement = new OwFormElement("input_y81jag1w", "form_name");
+form.addElement(formElement);
+var formElement = new OwFormElement("input_y5ez3ked", "csrf_token");
+form.addElement(formElement);
+var formElement = new OwTextField("input_az2r254m", "identity");formElement.addValidator({
+        	validate : function( value ){
+                if(  $.isArray(value) ){ if(value.length == 0  ) throw "B\u1eaft bu\u1ed9c"; return;}
+                else if( !value || $.trim(value).length == 0 ){ throw "B\u1eaft bu\u1ed9c"; }
+        },
+        	getErrorMessage : function(){ return "B\u1eaft bu\u1ed9c" }
+        });
+form.addElement(formElement);
+var formElement = new OwTextField("input_es2juq4z", "password");formElement.addValidator({
+        	validate : function( value ){
+                if(  $.isArray(value) ){ if(value.length == 0  ) throw "B\u1eaft bu\u1ed9c"; return;}
+                else if( !value || $.trim(value).length == 0 ){ throw "B\u1eaft bu\u1ed9c"; }
+        },
+        	getErrorMessage : function(){ return "B\u1eaft bu\u1ed9c" }
+        });
+form.addElement(formElement);
+var formElement = new OwCheckboxField("input_17opom36", "remember");
+form.addElement(formElement);
+
+
+			if ( form.form ) 
+			{
+    			$(form.form).bind( 'submit', {form:form},
+    					function(e){
+    						return e.data.form.submitForm();
+    					}
+    			);
+                        }
+                        
+                        OW.trigger('base.onFormReady.' + form.name, [], form);
+                        OW.trigger('base.onFormReady', [form]);
+		form.bind('success', function(data){if( data.result ){OW.info(data.message);setTimeout(function(){window.location.reload();}, 1000);}else{OW.error(data.message);}});})({});
+(function(_scope) {      
+            var knn = angular.module('knn');
+            knn.requires.push('knn.escort');
+            //execute our boot-strapping function
+             bootNg();
+        })({});
+
+});
+</script>
+
+	</div>
+
+<!--	<div class='scrolltop'>
+		<div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+	</div>-->
+</body>
+</html>
